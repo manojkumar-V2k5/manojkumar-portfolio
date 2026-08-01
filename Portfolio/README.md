@@ -1,2 +1,0 @@
-# Portfolio
-Open index.html
