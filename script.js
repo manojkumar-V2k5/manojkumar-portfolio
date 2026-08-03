@@ -764,6 +764,27 @@ behavior:"smooth"
 }
 
 });
+/* ===========================
+   CUSTOM CURSOR
+=========================== */
+const dot = document.querySelector(".cursor-dot");
+const ring = document.querySelector(".cursor-ring");
+
+document.addEventListener("mousemove",(e)=>{
+
+    dot.style.left = e.clientX + "px";
+    dot.style.top = e.clientY + "px";
+
+    ring.animate({
+        left:e.clientX+"px",
+        top:e.clientY+"px"
+    },{
+        duration:120,
+        fill:"forwards"
+    });
+
+});
+
 
 /* ===========================
    CURRENT YEAR
